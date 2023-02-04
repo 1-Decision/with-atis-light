@@ -83,7 +83,7 @@ html(lang='en')
             polygon(fill='currentColor' points='0 10 10 0 10 10')
         .py-20.bg-gray-50.radius-for-skewed
           .container.mx-auto.px-4
-            .mb-16.max-w-md.mx-auto.text-center  #{pricing.pug}
+        include  pricing.pug
        section 
         .skew.skew-top.mr-for-radius
           svg.h-8.md_h-12.lg_h-20.w-full.text-gray-50(viewBox='0 0 10 10' preserveAspectRatio='none')
@@ -93,6 +93,6 @@ html(lang='en')
             polygon(fill='currentColor' points='0 10 10 0 10 10')
         .py-20.bg-gray-50.radius-for-skewed
           .container.mx-auto.px-4
-            .mb-16.max-w-md.mx-auto.text-center   signup.pug    
+           include signup.pug    
       include common/footer.pug
       +footer()
